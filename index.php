@@ -11,36 +11,21 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
 <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet"> -->
 
 </head>
 <body>
     <div class="fawzi">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <button class="navbar-toggler" aria-label="Toggle navigation">
-          <span class="navbar-"></span>
-        </button>
-        <a class="navbar-brand" href="#">Embaucher Moi</a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Acceuil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nos Eleves </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            
-          </form>
-        </div>
-      </nav>
+        <div class="header">
+            <a href="#default" class="logo">#Embaucher-Moi</a>
+            <div class="header-right">
+              <a class="active" href="#home">Acceuil</a>
+              <a  href="#">Nos étudiants</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
     <div class="container" style="height: 100%;">
         <div class="row">
             <div class="col" >
