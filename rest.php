@@ -32,7 +32,7 @@
                     <h6>Asnieres</h6>
                     <p>User interface designer and <br/> front-end developer</p>
                     <div class="buttons">
-                        <button onclick="window.location.href='./index.php'"class="primary">
+                        <button onclick="window.location.href='./index.php?id=1'"class="primary">
                             EN SAVOIR PLUS
                         </button>
                         

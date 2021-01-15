@@ -1,45 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" method="post" enctype="multipart/form-data">
+    Select Image Files to Upload:
+    <input type="file" name="files[]" multiple >
+    <input type="submit" name="submit" value="UPLOAD">
+</form>
+</body>
 
 <?php
+// Include the database configuration file
+include_once 'dbconfig.php';
 
-/*-- we included connection files--*/
-include "connection.php";
+// Get images from the database
+$query = $db->query("SELECT * FROM User WHERE id = 2");
 
-/*--- we created a variables to display the error message on design page ------*/
-$error = "";
-
-if (isset($_POST["btn_upload"]) == "Upload")
-{
-    $file_tmp = $_FILES["fileImg"]["tmp_name"];
-    $file_name = $_FILES["fileImg"]["name"];
-
-    /*image name variable that you will insert in database ---*/
-    $image_name = $_POST["img-name"];
-
-    //image directory where actual image will be store
-    $file_path = "images/".$file_name;	
-
-/*---------------- php textbox validation checking ------------------*/
-if($image_name == "")
-{
-    $error = "Please enter Image name.";
-}
-
-/*-------- now insertion of image section has start -------------*/
-else
-{
-    if(file_exists($file_path))
-    {
-        $error = "Sorry,The <b>".$file_name."</b> image already exist.";
-    }
-        else
-        {
-            $result = mysqli_connect($host, $uname, $pwd) or die("Connection error: ". mysqli_error());
-            mysqli_select_db($result, $db_name) or die("Could not Connect to Database: ". mysqli_error());
-            mysqli_query($result,"INSERT INTO image_table(img_name,img_path)
-            VALUES('$image_name','$file_path')") or die ("image not inserted". mysqli_error());
-            move_uploaded_file($file_tmp,$file_path);
-            $error = "<p align=center>File ".$_FILES["fileImg"]["name"].""."<br />Image saved into Table.";
-        }
-    }
-}
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'uploads/'.$row["image"];
 ?>
+    <img src="<?php echo $imageURL; ?>" alt="" />
+<?php }
+}else{ ?>
+    <p>Pas d'image trouver</p>
+<?php } ?> 
+</html>

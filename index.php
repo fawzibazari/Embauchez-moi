@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+  $conn = mysqli_connect("localhost", "root", "root", "Embauchez Moi");
+  $results = mysqli_query($conn, "SELECT * FROM User WHERE id = 2");
+  $users = mysqli_fetch_all($results, MYSQLI_ASSOC);
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,25 +34,33 @@
     <div class="container" style="height: 100%;">
         <div class="row">
             <div class="col" >
-                <img src="Sans titre-1.png" alt="">
+                
+            
+                <!-- <img src="image/Zeyd.png" alt=""> -->
+                <?php foreach ($users as $user): ?>
+            
+                 <img src="<?php echo 'image/' . $user['image'] ?>">
+              
+            
             </div>
             <div class="ici col" >
                 <h1>Salut,  </h1>
-                    <p class="laba"> Je suis Zeyd </p>
+                    <p class="laba"> Je suis <?php echo $user['Prenom']; ?> </p>
                     <h2 id="hier">Concepteur Développeur D'application</h2>
-                   
+                    <?php endforeach; ?>
                      <!-- <p type="button" >    
                         <a type="button" class="btn btn-primary" href="./CV_wordpress_CDA/Microsoft Word - Template CV Zeyd.pdf" class="button" >
                            
                             Télecharger mon CV
                         </a>
                     </p> -->
-                    
-                    <button type="button" class="btn btn-primary">Télecharger mon CV</button>
+                    <form method="get" action="<?php echo 'CV_wordpress_CDA/' . $user['CV'] ?>">
+                    <button type="submit" class="btn btn-primary" >Télecharger mon CV</button>
+                    </form>
                     <br>
                     <br>
                      <!-- <button type="button" class="btn btn-danger"><a href="./CV_wordpress_CDA/Microsoft Word - Template CV Zeyd.pdf"></a> Télecharger mon CV</button> -->
-                    <iframe  class= "testa" width="560" height="315" src="https://www.youtube.com/embed/zJqs4dA7i90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  class= "testa" width="560" height="315" src="<?php echo $user['Video']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
         </div>
