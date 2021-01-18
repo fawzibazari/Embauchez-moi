@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-  $conn = mysqli_connect("localhost", "root", "root", "Embauchez Moi");
-  $results = mysqli_query($conn, "SELECT * FROM User WHERE id = 2");
-  $users = mysqli_fetch_all($results, MYSQLI_ASSOC);
-?>
+<?php 
+$lien = $_GET['id'];
+include 'connection.php';
+ ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +32,7 @@
           </div>
     <div class="container" style="height: 100%;">
         <div class="row">
-            <div class="col" >
+            <div class="col-sm" >
                 
             
                 <!-- <img src="image/Zeyd.png" alt=""> -->
@@ -43,11 +42,11 @@
               
             
             </div>
-            <div class="ici col" >
+            <div class="ici col-sm" >
                 <h1>Salut,  </h1>
                     <p class="laba"> Je suis <?php echo $user['Prenom']; ?> </p>
                     <h2 id="hier">Concepteur Développeur D'application</h2>
-                    <?php endforeach; ?>
+                    
                      <!-- <p type="button" >    
                         <a type="button" class="btn btn-primary" href="./CV_wordpress_CDA/Microsoft Word - Template CV Zeyd.pdf" class="button" >
                            
@@ -62,12 +61,13 @@
                      <!-- <button type="button" class="btn btn-danger"><a href="./CV_wordpress_CDA/Microsoft Word - Template CV Zeyd.pdf"></a> Télecharger mon CV</button> -->
                     <iframe  class= "testa" width="560" height="315" src="<?php echo $user['Video']; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-
+<?php endforeach; ?>
         </div>
     </div>   
     
 </div>
 <div class="testo">
+<p>testetstegdjjgjg</p>
     
 </div>
 </body>
@@ -83,7 +83,7 @@
     box-shadow: 3px 3px rgb(2, 2, 2), -1em 0 .4em rgb(17, 17, 14);
 }
 
-.col,h1 {
+.col-sm,h1 {
     margin-top: 200px;
     color: white;
 }
@@ -137,6 +137,9 @@ font-family: 'Poppins', sans-serif;
     border-radius:0;
     border: 2px solid transparent;
     color:white;
+}
+html {
+    background-color: white;
 }
  
 </style>
