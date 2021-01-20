@@ -1,6 +1,6 @@
 
-html { background-image: linear-gradient(to top, #e02941, #a6213b, #6d1c2f, #38141e, #000000); /*009fe4*/
-    color: #fff;
+html {background: rgb(224,41,65);
+background: linear-gradient(90deg, rgba(224,41,65,1) 49%, rgba(0,212,255,1) 88%);
 }
 
 

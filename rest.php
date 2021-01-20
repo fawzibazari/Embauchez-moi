@@ -8,7 +8,7 @@
 	if (isset($_GET['edit'] )) {
 		$id = $_GET['edit'];
 		$update = true;
-		$record = mysqli_query($conn, "SELECT * FROM User WHERE id=$id");
+		$record = mysqli_query($conn, "SELECT * FROM user, class WHERE user.class_id_Class = class.id_Class AND id = $id");
 
 		if (count([$record]) !=0 ) {
 			$o = mysqli_fetch_array($record);
@@ -19,6 +19,7 @@
             $CV = $o['CV'];
             $Image_Profile = $o['Image_Profile'];
             $image = $o['image'];
+            $class = $o['nom'];
             			
 ?>
 
@@ -42,7 +43,11 @@ include 'connection.php';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
 
 <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet"> -->
@@ -51,7 +56,7 @@ include 'connection.php';
 <body>
     <div class="fawzi">
         <div class="header">
-            <a href="#default" class="logo">#Embaucher-Moi</a>
+            <a href="#default" class="logo">#Embauchez-Moi</a>
             <div class="header-right">
               <a class="active" href="#home">Acceuil</a>
               <a  href="#">Nos étudiants</a>
@@ -66,28 +71,28 @@ include 'connection.php';
                 <!-- <img src="image/Zeyd.png" alt=""> -->
                 
             
-                 <img src="<?php echo 'image/' . $image ?>">
+                 <img src="<?php echo 'image/' . $image ?>" class="img-fluid">
               
             
             </div>
-            <div class="ici col-sm" >
-                <h1>Salut,  </h1>
-                    <p class="laba"> Je suis <?php echo $Prenom ?> </p>
-                    <h2 id="hier"><?php echo $Text ?></h2>
+            <div class="ici col" >
+            <h1 class="text-white">Bonjour,<br></h1>
+                        <span class="abc">Je suis <?php echo $Prenom ?></span>
+                        <h2><?php echo $class ?></h2>
+                        
+                
                     
-                     <!-- <p type="button" >    
-                        <a type="button" class="btn btn-primary" href="./CV_wordpress_CDA/Microsoft Word - Template CV Zeyd.pdf" class="button" >
-                           
-                            Télecharger mon CV
-                        </a>
-                    </p> -->
+                     
+                    <br>
                     <form method="get" action="<?php echo 'CV_wordpress_CDA/' . $CV ?>">
                     <button type="submit" class="btn btn-primary" >Télecharger mon CV</button>
                     </form>
                     <br>
-                    <br>
                      <!-- <button type="button" class="btn btn-danger"><a href="./CV_wordpress_CDA/Microsoft Word - Template CV Zeyd.pdf"></a> Télecharger mon CV</button> -->
-                    <iframe  class= "testa" width="560" height="315" src="<?php echo $Video; ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                     <div class="tatacontainer"> 
+                            <iframe class="responsive-iframe" width="560" height="315" src=<?php echo $Video; ?> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
             </div>
 
         </div>
@@ -95,7 +100,13 @@ include 'connection.php';
     
 </div>
 <div class="testo">
+<!-- <p>testetstegdjjgjg</p>
 <p>testetstegdjjgjg</p>
+<p>testetstegdjjgjg</p>
+<p>testetstegdjjgjg</p>
+<p>testetstegdjjgjg</p>
+<p>testetstegdjjgjg</p>
+<p>testetstegdjjgjg</p> -->
 
     
 </div>
@@ -103,11 +114,55 @@ include 'connection.php';
 </html>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,700;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&family=Teko:wght@600&display=swap');
+    .tatacontainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+    
+    h2{
+        margin-top: 10px
+    }
+    
+    .abc{
+        font-family: 'Exo', sans-serif;
+font-family: 'Teko', sans-serif;
+
+        font-size: 45px;
+        font-weight: bold;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 0px;
+        
+    }
+.banner-left h1 span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    font-weight: 30px;
+    
+    
+}
 .testo {
     background-color: white;
 }
 .fawzi {
-    background-image: linear-gradient(to right top, #e02941, #db243c, #d72037, #d21b32, #cd152d);
+    background: rgb(224,41,65);
+background: linear-gradient(0deg, rgba(224,41,65,1) 41%, rgba(0,0,0,0.7805497198879552) 100%);
     color: #fff;
     box-shadow: 3px 3px rgb(2, 2, 2), -1em 0 .4em rgb(17, 17, 14);
 }
@@ -131,12 +186,11 @@ include 'connection.php';
 }
 .ici {
 font-family: 'Poppins', sans-serif;
- margin-top: 100px;
+ margin-top: 80px;
 }
 .laba{
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
     
     
 }
@@ -169,6 +223,10 @@ font-family: 'Poppins', sans-serif;
 }
 html {
     background-color: white;
+}
+
+.text-white{
+    margin-bottom: 10px;
 }
  
 </style>
