@@ -6,11 +6,11 @@
   define('DB_SERVER', 'localhost');
   define('DB_USERNAME', 'root');
   define('DB_PASSWORD', 'root');
-  define('DB_NAME', 'Embauchez Moi2');
+  define('DB_NAME', 'Embauchez Moi');
   $servername = "localhost";
   $username = "root";
   $password = "root";
-  $dbname = "Embauchez Moi2";
+  $dbname = "Embauchez Moi";
   $datatable = "User"; // MySQL table name
 //   $results_per_page = 20;
    
