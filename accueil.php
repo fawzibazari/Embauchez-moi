@@ -69,8 +69,8 @@ foreach ($res as $rows):
 ?>
 
 
-                      <div class="col" style="margin-top: 5%;" >
-                <div class="card-container">
+                      <div class="ta col" style="margin-top: 5%;" >
+                <div class="to card-container">
                     <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span>
                 
                     <img class="round" src="<?php echo 'Photo-neon/' . $rows['Image_Profile']?>"  alt="user" />
@@ -103,9 +103,11 @@ endforeach;
 
 </section>
 </body>
+
+ <!-- ======= Footer ======= -->
  <footer id="footer">
     <div class="footer-top">
-      <div class="tocontainer">
+      <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
@@ -155,7 +157,7 @@ endforeach;
       </div>
     </div>
 
-    <div class="tesrcontainer">
+    <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>IMIE-Paris</span></strong>.Tout les droit son réserver
       </div>
@@ -167,6 +169,24 @@ endforeach;
       </div>
     </div>
   </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 <html>
 

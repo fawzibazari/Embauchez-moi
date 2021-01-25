@@ -5,12 +5,12 @@
   // Informations d'identification
   define('DB_SERVER', 'localhost');
   define('DB_USERNAME', 'root');
-  define('DB_PASSWORD', 'root');
-  define('DB_NAME', 'Embauchez Moi');
+  define('DB_PASSWORD', '');
+  define('DB_NAME', 'Embauchez Moi2');
   $servername = "localhost";
   $username = "root";
-  $password = "root";
-  $dbname = "Embauchez Moi";
+  $password = "";
+  $dbname = "Embauchez Moi2";
   $datatable = "User"; // MySQL table name
 //   $results_per_page = 20;
    
