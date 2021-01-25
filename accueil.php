@@ -15,12 +15,14 @@
 <link rel="stylesheet" href="test.css">
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <div class="header">
     <a href="#default" class="logo">#Embauchez-Moi</a>
     <div class="header-right">
-      <a class="active" href="#home">Acceuil</a>
-      <a  href="#">Nos étudiants</a>
+      <a  href="index.html">Acceuil</a>
+      <a class="active" href="#">Nos étudiants</a>
       <a href="#">Contact</a>
     </div>
   </div>
@@ -55,7 +57,7 @@ foreach ($res as $rows):
                 
                     <img class="round" src="<?php echo 'Photo-neon/' . $rows['Image_Profile']?>"  alt="user" />
                     <h3><?php echo $rows['Prenom'] ?> </h3>
-                    <h6><?php echo $rows['Address']?> </h6>
+                    <h6><i class="fas fa-map-marker-alt"></i>  <?php echo $rows['Address']?> </h6>
                     <p><?php echo $rows['nom'] ?>  <br/> front-end developer</p>
                     <div class="buttons" style="padding-bottom:10% ;">
                     

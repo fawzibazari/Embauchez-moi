@@ -179,3 +179,8 @@ float: none;
 }
 
 }
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    color: #e02941;
+    font-size: large;
+}

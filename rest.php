@@ -58,8 +58,8 @@ include 'connection.php';
         <div class="header">
             <a href="#default" class="logo">#Embauchez-Moi</a>
             <div class="header-right">
-              <a class="active" href="#home">Acceuil</a>
-              <a  href="#">Nos étudiants</a>
+              <a  href="index.html">Acceuil</a>
+              <a  class="active" href="#">Nos étudiants</a>
               <a href="#">Contact</a>
             </div>
           </div>
