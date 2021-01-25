@@ -17,6 +17,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <!-- Favicons -->
+
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- les fichier Vendor  -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <div class="header">
     <a href="#default" class="logo">#Embauchez-Moi</a>
@@ -72,6 +90,7 @@ foreach ($res as $rows):
                 </div>
             </div>
 
+            
       
 <?php
 endforeach;
@@ -84,6 +103,70 @@ endforeach;
 
 </section>
 </body>
+ <footer id="footer">
+    <div class="footer-top">
+      <div class="tocontainer">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Embauchez Moi</h3>
+            <p>
+              70 rue marius anfan Levallois-Perret <br>
+            
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-youtube"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <!-- <h4>Useful Links</h4> -->
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Acceuil</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nos Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">developpement web</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber sécuriter</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Systéme Réseaux</a></li>
+              
+            </ul>
+          </div>
+
+          
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="tesrcontainer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>IMIE-Paris</span></strong>.Tout les droit son réserver
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
 <html>
 
