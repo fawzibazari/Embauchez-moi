@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
                 
-* {
+body {
     box-sizing: border-box;
 }
         img {
@@ -8,25 +8,13 @@ max-width:100%;
 height:auto;
 }   
         
-.container {
-    background-color: white;
-    font-family: Montserrat, sans-serif;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
-    min-height: 100vh;
-    margin-left: 300px;
-}
-
-h3 {
+.yo {
     margin: 10px 0;
     color: black;
 }
 
-h6 {
+.yi {
     margin: 5px 0;
     text-transform: uppercase;
     color: black;
@@ -38,11 +26,11 @@ p {
     color: black;
 }
 
-.card-container {
+.to {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
-    color: black;
+    color: rgb(209, 199, 199);
     padding-top: 30px;
     position: relative;
     width: 350px;
@@ -108,30 +96,7 @@ button.primary.ghost {
     color: black;
 }
 
-footer {
-    background-color: white;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
 
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
 .header {
 overflow: hidden;
 background-color:#E02941;
