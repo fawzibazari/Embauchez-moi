@@ -77,18 +77,73 @@
 </head>
 
 
+<form action="" method="post" style="position: absolute; ">
+            <input type="text" name="search" placeholder=" Rechercher" style="width: 200px; height: 35px;border: solid gray 1px; border-radius: 2px">
+            <button class="button-search" type="submit" name="submit" style="width: 60px; height: 36px; margin-left: -5px; border: solid gray 1px; border-radius: 2px;margin: -14px -4px -5px;"><i class='bx bx-search'></i></button>
+  </form>
 
+    
+       
+ <?php
+$con=new mysqli($servername,$username,$password,$dbname);
+
+if(isset($_POST["search"])){
+$search_value=$_POST["search"];
+if($con->connect_error){
+    echo 'Connection Faild: '.$conn->connect_error;
+    }else{
+      
+      $sql="SELECT * FROM user, class WHERE user.class_id_Class = class.id_Class AND( nom LIKE '%$search_value%' OR Prenom LIKE '%$search_value%' OR Address LIKE '%$search_value%')";
+          $res=$con->query($sql);
+ if(mysqli_num_rows($res) > 0){
+echo "<br>";
+
+        ?>  <div class="row nomarge">
         <?php
-$conn=new mysqli($servername,$username,$password,$dbname);
+           while($row=$res->fetch_assoc()){
+         ?>
+         <div class="ta col" style="margin-top: 5%;" >
+         <div class="to card-container">
+             <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span>
+         
+             <img class="round" src="<?php echo 'Photo-neon/' . $row['Image_Profile']?>"  alt="user" />
+             <h3 class="yo"><?php echo $row['Prenom'] ?> </h3>
+             <h6 class="yi"><i class="fas fa-map-marker-alt"></i>  <?php echo $row['Address']?> </h6>
+             <p><?php echo $row['nom'] ?>  <br/> front-end developer</p>
+             <div class="buttons" style="padding-bottom:10% ;">
+             
+           
+                 <button onclick="window.location.href='./rest.php?edit=<?php echo $row['id']?>'"class="primary" >
+                     EN SAVOIR PLUS
+                 </button>
+               
+             </div>
+         
+       
+         </div>
+     </div>
 
-;
- ?>
+<?php 
+     }
+?>
+          
+          </div>         <?php
+        }else{
+       echo "nous n'avons rien ",$search_value ;
+     }
+
+        
+?>
 <?php
-
-
+    
+  }
+?>
+<?php
+}else{
   $sql = "SELECT * FROM user, class WHERE user.class_id_Class = class.id_Class AND id ";
   $res=$conn->query($sql);
   $res -> fetch_all(MYSQLI_ASSOC);
+  
 
 
  ?> <div class="row nomarge">
@@ -97,39 +152,37 @@ foreach ($res as $rows):
 
 ?>
 
-
-                      <div class="ta col" style="margin-top: 5%;" >
-                <div class="to card-container">
-                    <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span>
-                
-                    <img class="round" src="<?php echo 'Photo-neon/' . $rows['Image_Profile']?>"  alt="user" />
-                    <h3 class="yo"><?php echo $rows['Prenom'] ?> </h3>
-                    <h6 class="yi"><i class="fas fa-map-marker-alt"></i>  <?php echo $rows['Address']?> </h6>
-                    <p><?php echo $rows['nom'] ?>  <br/> front-end developer</p>
-                    <div class="buttons" style="padding-bottom:10% ;">
-                    
-                  
-                        <button onclick="window.location.href='./rest.php?edit=<?php echo $rows['id']?>'"class="primary" >
-                            EN SAVOIR PLUS
-                        </button>
-                      
-                    </div>
-                
+<div class="ta col" style="margin-top: 5%;" >
+              <div class="to card-container">
+                  <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span>
               
-                </div>
-            </div>
-
+                  <img class="round" src="<?php echo 'Photo-neon/' . $rows['Image_Profile']?>"  alt="user" />
+                  <h3 class="yo"><?php echo $rows['Prenom'] ?> </h3>
+                  <h6 class="yi"><i class="fas fa-map-marker-alt"></i>  <?php echo $rows['Address']?> </h6>
+                  <p><?php echo $rows['nom'] ?>  <br/> front-end developer</p>
+                  <div class="buttons" style="padding-bottom:10% ;">
+                  
+                
+                      <button onclick="window.location.href='./rest.php?edit=<?php echo $rows['id']?>'"class="primary" >
+                          EN SAVOIR PLUS
+                      </button>
+                    
+                  </div>
+              
             
-      
+              </div>
+          </div>
+
 <?php
 endforeach;
 ?>  
 </div>
 <?php
 
-
+}
 ?>
 
+</section>
 </section>
 </body>
 
@@ -191,7 +244,10 @@ endforeach;
         &copy; Copyright <strong><span>IMIE-Paris</span></strong>.Tout les droit son réserver
       </div>
       <div class="credits">
-
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -216,7 +272,189 @@ endforeach;
 
 <html>
 
+<style>
 
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
+                
+                * {
+                    box-sizing: border-box;
+                }
+                        img {
+                max-width:100%;
+                height:auto;
+                }   
+                        
+                .container {
+                    background-color: blue;
+                    font-family: Montserrat, sans-serif;
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                
+                    min-height: 100vh;
+                    margin-left: 300px;
+                }
+                
+                h3 {
+                    margin: 10px 0;
+                    color: black;
+                }
+                
+                h6 {
+                    margin: 5px 0;
+                    text-transform: uppercase;
+                    color: black;
+                }
+                
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: black;
+                }
+                
+                .card-container {
+                    background-color: white;
+                    border-radius: 5px;
+                    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+                    color: #B3B8CD;
+                    padding-top: 30px;
+                    position: relative;
+                    width: 350px;
+                    max-width: 100%;
+                    text-align: center;
+                }
 
-
-
+                .card-container .pro {
+                    color: #231E39;
+                    background-color: #009fe4;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 3px 7px;
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+                
+                
+                
+                .card-container .round {
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+                
+                button.primary {
+                    background-color: #e02941;
+                    border: 1px solid white;
+                    border-radius: 3px;
+                    color: #231E39;
+                    font-family: Montserrat, sans-serif;
+                    font-weight: 500;
+                    padding: 10px 25px;
+                }
+                
+                button.primary.ghost {
+                    background-color: transparent;
+                    color: #02899C;
+                }
+                
+                .skills {
+                    background-color: white;
+                    text-align: left;
+                    padding: 15px;
+                    margin-top: 30px;
+                    color: black;
+                }
+                
+                .skills ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    color: black;
+                }
+                
+                .skills ul li {
+                    border: 1px solid #2D2747;
+                    border-radius: 2px;
+                    display: inline-block;
+                    font-size: 12px;
+                    margin: 0 7px 7px 0;
+                    padding: 7px;
+                    color: black;
+                }
+                
+                footer {
+                    background-color: white;
+                    color: #fff;
+                    font-size: 14px;
+                    bottom: 0;
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    z-index: 999;
+                }
+                
+                footer p {
+                    margin: 10px 0;
+                }
+                
+                footer i {
+                    color: red;
+                }
+                
+                footer a {
+                    color: #3c97bf;
+                    text-decoration: none;
+                }
+                .header {
+                overflow: hidden;
+                background-color:#E02941;
+                padding: 20px 10px;
+                }
+                
+                .header a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px; 
+                line-height: 25px;
+                border-radius: 4px;
+                }
+                
+                .header a.logo {
+                font-size: 25px;
+                font-weight: bold;
+                }
+                
+                .header a:hover {
+                background-color: dodgerblue;
+                color: white;
+                }
+                
+                .header a.active {
+                background-color: dodgerblue;
+                color: white;
+                }
+                
+                .header-right {
+                float: right;
+                }
+                @media screen and (max-width: 500px) {
+                .header a {
+                float: none;
+                display: block;
+                text-align: left;
+                }
+                
+                .header-right {
+                float: none;
+                }
+                
+                } */
+</style>

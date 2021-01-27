@@ -56,7 +56,7 @@ include 'connection.php';
 <body>
     <div class="fawzi">
         <div class="header">
-            <a href="#default" class="logo">#Embauchez-Moi</a>
+            <a href="index.html" class="logo">#Embauchez-Moi</a>
             <div class="header-right">
               <a  href="index.html">Acceuil</a>
               <a  class="active" href="#">Nos étudiants</a>
