@@ -159,7 +159,7 @@ foreach ($res as $rows):
                   <img class="round" src="<?php echo 'Photo-neon/' . $rows['Image_Profile']?>"  alt="user" />
                   <h3 class="yo"><?php echo $rows['Prenom'] ?> </h3>
                   <h6 class="yi"><i class="fas fa-map-marker-alt"></i>  <?php echo $rows['Address']?> </h6>
-                  <p><?php echo $rows['nom'] ?>  <br/> front-end developer</p>
+                  <p><?php echo $rows['nom'] ?>  </p>
                   <div class="buttons" style="padding-bottom:10% ;">
                   
                 
