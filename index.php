@@ -1,3 +1,5 @@
+<?php  include('function.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Embaucher Moi</title>
+  <title>Embauchez-Moi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,38 +26,41 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
- 
+
+
+  
 </head>
 
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-block">
+  <!-- <section id="topbar" class="d-none d-lg-block">
     <div class="container d-flex">
       <div class="contact-info me-auto">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@imie.fr</a>
+        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@imie-paris.fr</a>
         <i class="icofont-phone"></i> 01 41 05 73 80
       </div>
       <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
         <a href="#" class="skype"><i class="icofont-youtube"></i></a>
         <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container d-flex">
 
       <div class="logo me-auto">
-        <h1 class="text-light"><a href="index.html"><span>Embauchez Moi</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>#Embauchez-Moi</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -104,9 +109,9 @@
           <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Bienvenue <span>sur le site de Embauchez Moi</span></h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">EN SAVOIR PLUS</a>
+                <h2 class="animate__animated animate__fadeInDown">Bienvenue <span>sur le site de promotion des étudiants et des étudiantes IMIE Paris</span></h2>
+                <p class="animate__animated animate__fadeInUp"></p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto"style="background-color: #0d6efd;">EN SAVOIR PLUS</a>
               </div>
             </div>
           </div>
@@ -115,23 +120,23 @@
           <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Découvrez nos formations</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">EN SAVOIR PLUS</a>
+                <h2 class="animate__animated animate__fadeInDown">Recrutez vos futurs talents !</h2>
+                <p class="animate__animated animate__fadeInUp"></p>
+                <a href="accueil.php" class="btn-get-started animate__animated animate__fadeInUp scrollto"style="background-color: #0d6efd;">EN SAVOIR PLUS</a>
               </div>
             </div>
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
+          <!-- <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown">Test</h2>
                 <p class="animate__animated animate__fadeInUp">Catégories</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">EN SAVOIR PLUS</a>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background-color: #0d6efd;">EN SAVOIR PLUS</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -163,8 +168,10 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
             <div class="section-title">
-              <h2>A propos de Nous </h2>
-              <p>Nous somme IMIE Paris une Ecole de numérique on a créer se site pour les recruteur  </p>
+              <h2>Qui sommes-nous ?</h2>
+              <p>IMIE Paris est une école du numérique qui prépare les étudiants(es) à la validation de 8 titres professionnels dans le domaine informatique. Nos parcours certifiants sont dispensés de Bac à Bac+6 en formation continue ou alternée (contrat d’apprentissage et de professionnalisation). Nous formons les futurs talents : administrateur d’infrastructures et réseaux, développeur web et web mobile, concepteur d’application, RSSI, Architecte Technique ….
+
+                L’école est située à Levallois-Perret, elle bénéficie de quatre laboratoires informatique et 54 salles de formation réparties sur 4200 m².  Notre corps professoral est composé de formateurs experts dans leur domaine d’intervention et pour la plupart en activité dans le secteur privé.  Nous avons intégré 300 stagiaires cette année répartis sur 18 promotions. Le taux de réussite 2020 est supérieur à 86% ! </p>
             </div>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -280,25 +287,19 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Nos services</h2>
+          <h2>Notre ambition</h2>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Developpement web</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
+           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href="">Réseaux</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <h4 class="title"><a href=""></a></h4>
+            <p class="description">Notre ambition c'est promouvoir par le CV vidéo, nos étudiants à la recherche d'une entreprise pour les accueillir en alternance.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Numérique</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
+           </div>
           <!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="icofont-image"></i></div>
             <h4 class="title"><a href="">Magni Dolores</a></h4>
@@ -317,6 +318,10 @@
         </div>
 
       </div>
+      <div class="row">
+
+        
+          </div>
 
 
     <!-- ======= Our Portfolio Section ======= -->
@@ -483,20 +488,10 @@
 
         <div class="row">
 
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
+        <figure class="figure">
+  <img src="..." class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  <figcaption class="figure-caption">A caption for the above image.</figcaption>
+</figure>
           </div>
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -614,7 +609,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Contacter Nous</h2>
+          <h2>Contactez Nous</h2>
         </div>
 
         <div class="row">
@@ -631,7 +626,7 @@
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Notre Email</h3>
-              <p>info@<br>contact@imie.fr</p>
+              <p>contact@imie-paris.fr</p>
             </div>
           </div>
 
@@ -647,26 +642,34 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $Prenom ?>" data-rule="minlen:4" data-msg=" entrer 4 charactéres au moin" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Prenom" data-rule="minlen:4" data-msg=" entrer 4 charactéres au moin" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Entreprise" data-rule="minlen:4" data-msg=" entrer 4 charactéres au moin" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Mail" data-rule="email" data-msg="entrer un bon email" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Intéressé par quelétudiant" data-rule="minlen:4" data-msg="ou moin 8 charactéres " />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Message" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Chargement</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Votre message a été envoyez Merci!</div>
               </div>
               <div class="text-center"><button type="submit">Envoyer</button></div>
             </form>
@@ -675,7 +678,7 @@
         </div>
 
       </div>
-    </section><!-- End Contact Us Section -->
+    </section><!-- fin de la section Contact Us  -->
 
   </main><!-- End #main -->
 
@@ -686,19 +689,21 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Embauchez Moi</h3>
+            <h3>#Embauchez-Moi</h3>
             <p>
-              70 rue marius anfan Levallois-Perret <br>
-            
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <i class="fas fa-map-marker"></i>&nbsp;70 rue marius anfan Levallois-Perret <br>
+              <i class="fas fa-subway"></i>&nbsp;Ligne 3 . Anatole France <br>
+              <i class="fas fa-train"></i>&nbsp;Clichy Levallois <br>
+              <i class="fas fa-bus"></i></i>&nbsp;Lignes 174-274 . Anatole France<br>
+              <strong>Tel:</strong> &nbsp;01 41 05 73 80<br>
+              <strong>Email:</strong> &nbsp;contact@imie-paris.fr<br>
             </p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-youtube"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              
+              <a href="https://www.facebook.com/IMIE.Paris/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/imie.paris/?hl=fr" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UChJz7bm6qDJIM_SK_hnCgvw" class="google-plus"><i class="bx bxl-youtube"></i></a>
+              <a href="https://fr.linkedin.com/school/imie-paris-institut-de-la-filiere-numerique/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
 
@@ -734,7 +739,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>IMIE-Paris</span></strong>.Tout les droit son réserver
+        &copy; Copyright <a class="MentionL" href="Mention-Legale.html"><strong><span>IMIE-Paris</span></strong></a>.Tout les droit son réserver
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -744,8 +749,21 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <a href="#" class="the" id="menu-share">
+    <i class="fa fa-share my-float"></i>
+    </a>
+    <ul class="test">
+    <li><a href="https://www.facebook.com/IMIE.Paris/">
+    <i class="fab fa-facebook my-float"></i>
+    </a></li>
+    <li><a href="https://fr.linkedin.com/school/imie-paris-institut-de-la-filiere-numerique/">
+    <i class="fab fa-linkedin my-float"></i>
+    </a></li>
+    <li><a href="https://www.youtube.com/channel/UChJz7bm6qDJIM_SK_hnCgvw">
+      <i class="fab fa-youtube my-float"></i>
+      <li><a href="https://www.instagram.com/imie.paris/?hl=fr">
+        <i class="fab fa-instagram my-float"></i>
+    </ul>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -764,5 +782,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

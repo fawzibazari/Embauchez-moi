@@ -13,6 +13,10 @@ body {
   color: #444;
 }
 
+.MentionL {
+  color: white;
+}
+
 a {
   color: #428bca;
   text-decoration: none;
@@ -31,6 +35,92 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   :root {
     scroll-behavior: auto;
   }
+}
+
+
+.the{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:50px;
+	right:40px;
+	background-color:#e02941;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	z-index:1000;
+	animation: bot-to-top 2s ease-out;
+}
+
+.test{
+	position:fixed;
+	right:40px;
+	padding-bottom:20px;
+	bottom:80px;
+	z-index:100;
+}
+
+.test li{
+	list-style:none;
+	margin-bottom:10px;
+}
+
+.test li a{
+	background-color:#e02941;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	width:55px;
+	height:55px;
+	display:block;
+}
+
+.test:hover{
+	visibility:visible!important;
+	opacity:1!important;
+}
+
+
+.my-float{
+	font-size:24px;
+	margin-top:16px;
+}
+
+a#menu-share + .test{
+  visibility: hidden;
+}
+
+a#menu-share:hover + .test{
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+a#menu-share i{
+	animation: rotate-in 0.5s;
+}
+
+a#menu-share:hover > i{
+	animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+    0%   {bottom:-40px}
+    50%  {bottom:40px}
+}
+
+@keyframes scale-in {
+    from {transform: scale(0);opacity: 0;}
+    to {transform: scale(1);opacity: 1;}
+}
+
+@keyframes rotate-in {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotate-out {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 
 /*--------------------------------------------------------------
@@ -1380,7 +1470,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #768fa6;
+  background: #e02941;
   color: #fff;
   line-height: 1;
   padding: 8px 0;

@@ -3,11 +3,11 @@
   define('DB_SERVER', 'localhost');
   define('DB_USERNAME', 'root');
   define('DB_PASSWORD', 'root');
-  define('DB_NAME', 'Embauchez Moi');
+  define('DB_NAME', 'EmbauchezMoi');
   $servername = "localhost";
   $username = "root";
   $password = "root";
-  $dbname = "Embauchez Moi";
+  $dbname = "EmbauchezMoi";
   $datatable = "User"; // MySQL table name
 //   $results_per_page = 20;
    

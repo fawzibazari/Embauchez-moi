@@ -29,7 +29,7 @@
 <html lang="en">
 <?php 
 
-include 'connection.php';
+
 ?>
 
  
@@ -48,6 +48,7 @@ include 'connection.php';
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="rest.css">
 
 <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet"> -->
@@ -59,7 +60,7 @@ include 'connection.php';
             <a href="index.html" class="logo">#Embauchez-Moi</a>
             <div class="header-right">
               <a  href="index.html">Acceuil</a>
-              <a  class="active" href="#">Nos étudiants</a>
+              <a   href="accueil.php">Nos étudiants</a>
               <a href="#">Contact</a>
             </div>
           </div>
@@ -71,7 +72,7 @@ include 'connection.php';
                 <!-- <img src="image/Zeyd.png" alt=""> -->
                 
             
-                 <img src="<?php echo 'image/' . $image ?>" class="img-fluid">
+                 <img src="<?php echo 'Image/' . $image ?>" class="img-fluid">
               
             
             </div>
@@ -100,13 +101,7 @@ include 'connection.php';
     
 </div>
 <div class="testo">
-<!-- <p>testetstegdjjgjg</p>
-<p>testetstegdjjgjg</p>
-<p>testetstegdjjgjg</p>
-<p>testetstegdjjgjg</p>
-<p>testetstegdjjgjg</p>
-<p>testetstegdjjgjg</p>
-<p>testetstegdjjgjg</p> -->
+
 
     
 </div>
@@ -187,7 +182,35 @@ background: linear-gradient(0deg, rgba(224,41,65,1) 41%, rgba(0,0,0,0.7805497198
 .ici {
 font-family: 'Poppins', sans-serif;
  margin-top: 80px;
+
 }
+@media screen and (max-width: 480px) {
+    .ici {
+        font-family: 'Poppins', sans-serif;
+        margin-top: -190px;
+         
+        }
+}
+@media screen and (max-width: 780px) {
+    .ici {
+    font-family: 'Poppins', sans-serif;
+    margin-top: -195px;
+}
+}
+@media screen and (max-width: 1200px) and (min-width: 500px) {
+    .row {
+    
+     --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: block;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+
+}
+}
+
 .laba{
     text-transform: uppercase;
     font-weight: 700;

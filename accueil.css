@@ -7,7 +7,16 @@ body {
 max-width:100%;
 height:auto;
 }   
-        
+.ta {
+    margin-top: 31px;
+    }   
+@media screen and (min-width: 780px) {
+    .ta {
+        margin-top: 5%;
+        margin-left: 15px;
+    
+        }
+}
 
 .yo {
     margin: 10px 0;
@@ -25,7 +34,9 @@ p {
     line-height: 21px;
     color: black;
 }
-
+.zoom:hover {
+    transform: scale(1.1); 
+}
 .to {
     background-color: white;
     border-radius: 5px;
@@ -60,7 +71,7 @@ button.primary {
     background-color: #e02941;
     border: 1px solid white;
     border-radius: 3px;
-    color: #231E39;
+    color: white;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     padding: 10px 25px;

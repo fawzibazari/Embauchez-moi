@@ -12,11 +12,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="accueil.css">
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link href="assets/css/style.css" rel="stylesheet">
   <!-- Favicons -->
 
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -39,7 +40,7 @@
     <div class="container d-flex">
 
       <div class="logo me-auto">
-        <h1 class="text-light"><a href="index.html"><span>Embauchez Moi</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>#Embauchez-Moi</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -83,7 +84,7 @@
   </form>
 
     
-       
+      
  <?php
 $con=new mysqli($servername,$username,$password,$dbname);
 
@@ -99,10 +100,11 @@ if($con->connect_error){
 echo "<br>";
 
         ?>  <div class="row nomarge">
+                        
         <?php
            while($row=$res->fetch_assoc()){
          ?>
-         <div class="ta col" style="margin-top: 5%;" >
+         <div class="ta col" style="margin-top: 31px">
          <div class="to card-container">
              <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span>
          
@@ -147,13 +149,23 @@ echo "<br>";
 
 
  ?> <div class="row nomarge">
+
+<style>
+       .go {
+         text-align: center;
+         margin-top: 50px;
+         font-size: 20px
+       } 
+       </style>
+<p class="go"><strong>Recrutez vos futurs talents !</strong></p>
+
  <?php
 foreach ($res as $rows):
 
 ?>
 
-<div class="ta col" style="margin-top: 5%;" >
-              <div class="to card-container">
+<div class="ta col" style="margin-top: 31px">
+              <div class="zoom to card-container" style="margin-top: 11%">
                   <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span>
               
                   <img class="round" src="<?php echo 'Photo-neon/' . $rows['Image_Profile']?>"  alt="user" />
@@ -162,7 +174,11 @@ foreach ($res as $rows):
                   <p><?php echo $rows['nom'] ?>  </p>
                   <div class="buttons" style="padding-bottom:10% ;">
                   
-                
+                <style>
+            .zoom:hover {
+    transform: scale(1.1); 
+}
+                </style>
                       <button onclick="window.location.href='./rest.php?edit=<?php echo $rows['id']?>'"class="primary" >
                           EN SAVOIR PLUS
                       </button>
@@ -193,12 +209,15 @@ endforeach;
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Embauchez Moi</h3>
+            <h3>#Embauchez-Moi</h3>
             <p>
-              70 rue marius anfan Levallois-Perret <br>
-            
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              
+              <i class="fas fa-map-marker"></i>   70 rue marius anfan Levallois-Perret <br>
+              <i class="fas fa-subway"></i>   Ligne 3 . Anatole France <br>
+              <i class="fas fa-train"></i>   Clichy Levallois <br>
+              <i class="fas fa-bus"></i>  Lignes 174-274 . Anatole France<br>
+              <strong>Tel:</strong> 01 41 05 73 80<br>
+              <strong>Email:</strong> contact@imie-paris.fr<br>
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -240,8 +259,8 @@ endforeach;
     </div>
 
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>IMIE-Paris</span></strong>.Tout les droit son réserver
+    <div class="copyright">
+        &copy; Copyright <a class="MentionL" href="Mention-Legale.html"><strong><span>IMIE-Paris</span></strong></a>.Tout les droit son réserver
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
