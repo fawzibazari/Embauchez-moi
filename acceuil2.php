@@ -142,7 +142,7 @@ echo "<br>";
 ?>
 <?php
 }else{
-  $sql = "SELECT * FROM user, class WHERE user.class_id_Class = class.id_Class AND id ";
+  $sql = "SELECT * FROM user, class WHERE user.class_id_Class = class.id_Class AND filiére_id_filiere = 1";
   $res=$conn->query($sql);
   $res -> fetch_all(MYSQLI_ASSOC);
   

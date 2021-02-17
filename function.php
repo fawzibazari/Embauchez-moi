@@ -2,12 +2,12 @@
 
   define('DB_SERVER', 'localhost');
   define('DB_USERNAME', 'root');
-  define('DB_PASSWORD', 'root');
-  define('DB_NAME', 'EmbauchezMoi');
+  define('DB_PASSWORD', '');
+  define('DB_NAME', 'embauchez moi');
   $servername = "localhost";
   $username = "root";
-  $password = "root";
-  $dbname = "EmbauchezMoi";
+  $password = "";
+  $dbname = "embauchez moi";
   $datatable = "User"; // MySQL table name
 //   $results_per_page = 20;
    

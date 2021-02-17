@@ -1,16 +1,21 @@
-<?php  include('function.php'); ?>
-
+<?php require 'header.php'; ?>
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Embauchez-Moi</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="accueil.css">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link href="assets/css/style.css" rel="stylesheet">
   <!-- Favicons -->
 
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -26,760 +31,353 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
 
 
+
+<!-- <form action="" method="post" style="position: absolute; ">
+
+<div class="search">
+    <input type="text" name="search"  class="searchTerm" placeholder="" style="    width: 200px;
+  height: 35px;
+  width: 200px;
+  height: 36px;
+  /* border-color: #e02941; */
+  border-radius: 7px 0px 0px 7px;
+  border: 3px solid #E02941;
+  padding-left: 7px;">
+    <button type="submit"  name="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+   </button>
+ </div>
+          </form> -->
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+</style>
   
-</head>
+ 
+</section>
+</section>
+</body>
 
-<body>
+     
 
-  <!-- ======= Top Bar ======= -->
-  <!-- <section id="topbar" class="d-none d-lg-block">
-    <div class="container d-flex">
-      <div class="contact-info me-auto">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@imie-paris.fr</a>
-        <i class="icofont-phone"></i> 01 41 05 73 80
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-youtube"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section> -->
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container d-flex">
 
-      <div class="logo me-auto">
-        <h1 class="text-light"><a href="index.html"><span>#Embauchez-Moi</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+    <div class="row nomarge">
 
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="index.html">Accueil</a></li>
-          <li><a href="accueil.php">Nos étudiant</a></li>
-          <!-- <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Equipe</a></li> -->
-          <!-- <li class="drop-down"><a href="">Drop Down</a> -->
-            <ul>
-              <!-- <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul> -->
-          </li>
-          <!-- <li><a href="#contact">Contact Us</a></li> -->
-        </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Bienvenue <span>sur le site de promotion des étudiants et des étudiantes IMIE Paris</span></h2>
-                <p class="animate__animated animate__fadeInUp"></p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto"style="background-color: #0d6efd;">EN SAVOIR PLUS</a>
+<?php $products = $DB->query('SELECT * FROM user, class WHERE user.class_id_Class = class.id_Class AND id '); ?>
+        <?php foreach ( $products as $product): ?>
+          <div class="ta col" style="margin-top: 31px">
+              <div class="zoom to card-container" style="margin-top: 11%">
+              <a  href="addpanier.php?id=<?= $product->id; ?>"> <span class="pro"><i style="font-size:30px" class="fa">&#xf07a;</i></span></a>
+           
+              
+                  <img class="round" src="Photo_neon/<?= $product->Image_Profile;?>"  alt="user" />
+                  <h3 class="yo"><?= $product->Prenom; ?> </h3>
+                  <h6 class="yi"><i class="fas fa-map-marker-alt"></i>  <?= $product->Address;?> </h6>
+                  <p><?= $product->Prenom; ?>  </p>
+                  <div class="buttons" style="padding-bottom:10% ;">
+                  
+                <style>
+            .zoom:hover {
+    transform: scale(1.1); 
+}
+                </style>
+                      <button onclick="window.location.href='./rest.php?edit=<?= $product->id; ?>'"class="primary" >
+                          EN SAVOIR PLUS
+                      </button>
+                    
+                  </div>
+              
+            
               </div>
-            </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Recrutez vos futurs talents !</h2>
-                <p class="animate__animated animate__fadeInUp"></p>
-                <a href="accueil.php" class="btn-get-started animate__animated animate__fadeInUp scrollto"style="background-color: #0d6efd;">EN SAVOIR PLUS</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <!-- <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Test</h2>
-                <p class="animate__animated animate__fadeInUp">Catégories</p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto" style="background-color: #0d6efd;">EN SAVOIR PLUS</a>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon icofont-rounded-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon icofont-rounded-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
-      </div>
+                 
+        <?php endforeach ?>
     </div>
-  </section><!-- End Hero -->
+        
 
-  <main id="main">
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/rentrée.png" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/embed/ZVLed65PZ4Y" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-
-            <div class="section-title">
-              <h2>Qui sommes-nous ?</h2>
-              <p>IMIE Paris est une école du numérique qui prépare les étudiants(es) à la validation de 8 titres professionnels dans le domaine informatique. Nos parcours certifiants sont dispensés de Bac à Bac+6 en formation continue ou alternée (contrat d’apprentissage et de professionnalisation). Nous formons les futurs talents : administrateur d’infrastructures et réseaux, développeur web et web mobile, concepteur d’application, RSSI, Architecte Technique ….
-
-                L’école est située à Levallois-Perret, elle bénéficie de quatre laboratoires informatique et 54 salles de formation réparties sur 4200 m².  Notre corps professoral est composé de formateurs experts dans leur domaine d’intervention et pour la plupart en activité dans le secteur privé.  Nous avons intégré 300 stagiaires cette année répartis sur 18 promotions. Le taux de réussite 2020 est supérieur à 86% ! </p>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dev-to" ></i></div>
-              <h4 class="title"><a href="">Developpement</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-network-chart"></i></div>
-              <h4 class="title"><a href="">Réseaux</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= About Lists Section ======= -->
-    <!-- <section class="about-lists">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="400">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="500">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End About Lists Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <!-- <section class="counts section-bg">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
-            <div class="count-box">
-              <i class="icofont-simple-smile" style="color: #20b38e;"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
-            </div>
-          </div> -->
-<!-- 
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="icofont-document-folder" style="color: #c042ff;"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
-            <div class="count-box">
-              <i class="icofont-live-support" style="color: #46d1ff;"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
-            <div class="count-box">
-              <i class="icofont-users-alt-5" style="color: #ffb459;"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Counts Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Notre ambition</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href=""></a></h4>
-            <p class="description">Notre ambition c'est promouvoir par le CV vidéo, nos étudiants à la recherche d'une entreprise pour les accueillir en alternance.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-           </div>
-          <!-- <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div> -->
-        </div>
-
-      </div>
+         
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
       <div class="row">
 
+        <div class="col-lg-3 col-md-6 footer-info">
+          <h3>#Embauchez-Moi</h3>
+          <p>
+            
+            <i class="fas fa-map-marker"></i>   70 rue marius anfan Levallois-Perret <br>
+            <i class="fas fa-subway"></i>   Ligne 3 . Anatole France <br>
+            <i class="fas fa-train"></i>   Clichy Levallois <br>
+            <i class="fas fa-bus"></i>  Lignes 174-274 . Anatole France<br>
+            <strong>Tel:</strong> 01 41 05 73 80<br>
+            <strong>Email:</strong> contact@imie-paris.fr<br>
+          </p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-youtube"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <!-- <h4>Useful Links</h4> -->
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Acceuil</a></li>
+            <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li> -->
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Nos Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">developpement web</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber sécuriter</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Systéme Réseaux</a></li>
+            
+          </ul>
+        </div>
+
         
-          </div>
-
-
-    <!-- ======= Our Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="section-title">
-          <h2>Our Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-eye"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="icofont-external-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
         </div>
 
-      </div>
-    </section>End Our Portfolio Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <!-- <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
-        </div>
-
-        <div class="row">
-
-        <figure class="figure">
-  <img src="..." class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-  <figcaption class="figure-caption">A caption for the above image.</figcaption>
-</figure>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-    </section><!-- End Our Team Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <!-- <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-
-        <div class="row  d-flex align-items-stretch">
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up">
-            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
-            <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="100">
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="200">
-            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
-            <p>
-              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="300">
-            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-            <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="400">
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-            <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-            </p>
-          </div>
-
-          <div class="col-lg-6 faq-item" data-aos="fade-up" data-aos-delay="500">
-            <h4>Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</h4>
-            <p>
-              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contactez Nous</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Notre Adresse</h3>
-              <p>70 rue Marius Aufant Levallois-Perret</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Notre Email</h3>
-              <p>contact@imie-paris.fr</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="info-box ">
-              <i class="bx bx-phone-call"></i>
-              <h3>Notre Numéro</h3>
-              <p>01 41 05 62 96</p>
-            </div>
-          </div>
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="<?php echo $Prenom ?>" data-rule="minlen:4" data-msg=" entrer 4 charactéres au moin" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Prenom" data-rule="minlen:4" data-msg=" entrer 4 charactéres au moin" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Entreprise" data-rule="minlen:4" data-msg=" entrer 4 charactéres au moin" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Mail" data-rule="email" data-msg="entrer un bon email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Intéressé par quelétudiant" data-rule="minlen:4" data-msg="ou moin 8 charactéres " />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Message" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Chargement</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Votre message a été envoyez Merci!</div>
-              </div>
-              <div class="text-center"><button type="submit">Envoyer</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- fin de la section Contact Us  -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>#Embauchez-Moi</h3>
-            <p>
-              <i class="fas fa-map-marker"></i>&nbsp;70 rue marius anfan Levallois-Perret <br>
-              <i class="fas fa-subway"></i>&nbsp;Ligne 3 . Anatole France <br>
-              <i class="fas fa-train"></i>&nbsp;Clichy Levallois <br>
-              <i class="fas fa-bus"></i></i>&nbsp;Lignes 174-274 . Anatole France<br>
-              <strong>Tel:</strong> &nbsp;01 41 05 73 80<br>
-              <strong>Email:</strong> &nbsp;contact@imie-paris.fr<br>
-            </p>
-            <div class="social-links mt-3">
-              
-              <a href="https://www.facebook.com/IMIE.Paris/" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/imie.paris/?hl=fr" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.youtube.com/channel/UChJz7bm6qDJIM_SK_hnCgvw" class="google-plus"><i class="bx bxl-youtube"></i></a>
-              <a href="https://fr.linkedin.com/school/imie-paris-institut-de-la-filiere-numerique/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <!-- <h4>Useful Links</h4> -->
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Acceuil</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li> -->
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nos Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">developpement web</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Cyber sécuriter</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Systéme Réseaux</a></li>
-              
-            </ul>
-          </div>
-
-          
-
-          </div>
-
-        </div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <a class="MentionL" href="Mention-Legale.html"><strong><span>IMIE-Paris</span></strong></a>.Tout les droit son réserver
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
-      </div>
+  <div class="container">
+  <div class="copyright">
+      &copy; Copyright <a class="MentionL" href="Mention-Legale.html"><strong><span>IMIE-Paris</span></strong></a>.Tout les droit son réserver
     </div>
-  </footer><!-- End Footer -->
-  <a href="#" class="the" id="menu-share">
-    <i class="fa fa-share my-float"></i>
-    </a>
-    <ul class="test">
-    <li><a href="https://www.facebook.com/IMIE.Paris/">
-    <i class="fab fa-facebook my-float"></i>
-    </a></li>
-    <li><a href="https://fr.linkedin.com/school/imie-paris-institut-de-la-filiere-numerique/">
-    <i class="fab fa-linkedin my-float"></i>
-    </a></li>
-    <li><a href="https://www.youtube.com/channel/UChJz7bm6qDJIM_SK_hnCgvw">
-      <i class="fab fa-youtube my-float"></i>
-      <li><a href="https://www.instagram.com/imie.paris/?hl=fr">
-        <i class="fab fa-instagram my-float"></i>
-    </ul>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+    </div>
+  </div>
+</footer><!-- End Footer -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/counterup/counterup.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
 
-</body>
-</html>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<html>
+
+<style>
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
+              
+              * {
+                  box-sizing: border-box;
+              }
+                      img {
+              max-width:100%;
+              height:auto;
+              }   
+                      
+              .container {
+                  background-color: blue;
+                  font-family: Montserrat, sans-serif;
+                  
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+              
+                  min-height: 100vh;
+                  margin-left: 300px;
+              }
+              
+              h3 {
+                  margin: 10px 0;
+                  color: black;
+              }
+              
+              h6 {
+                  margin: 5px 0;
+                  text-transform: uppercase;
+                  color: black;
+              }
+              
+              p {
+                  font-size: 14px;
+                  line-height: 21px;
+                  color: black;
+              }
+              
+              .card-container {
+                  background-color: white;
+                  border-radius: 5px;
+                  box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+                  color: #B3B8CD;
+                  padding-top: 30px;
+                  position: relative;
+                  width: 350px;
+                  max-width: 100%;
+                  text-align: center;
+              }
+
+              .card-container .pro {
+                  color: #231E39;
+                  background-color: #009fe4;
+                  border-radius: 3px;
+                  font-size: 14px;
+                  font-weight: bold;
+                  padding: 3px 7px;
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+              }
+              
+              
+              
+              .card-container .round {
+                  border: 1px solid white;
+                  border-radius: 50%;
+                  padding: 7px;
+              }
+              
+              button.primary {
+                  background-color: #e02941;
+                  border: 1px solid white;
+                  border-radius: 3px;
+                  color: #231E39;
+                  font-family: Montserrat, sans-serif;
+                  font-weight: 500;
+                  padding: 10px 25px;
+              }
+              
+              button.primary.ghost {
+                  background-color: transparent;
+                  color: #02899C;
+              }
+              
+              .skills {
+                  background-color: white;
+                  text-align: left;
+                  padding: 15px;
+                  margin-top: 30px;
+                  color: black;
+              }
+              
+              .skills ul {
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  color: black;
+              }
+              
+              .skills ul li {
+                  border: 1px solid #2D2747;
+                  border-radius: 2px;
+                  display: inline-block;
+                  font-size: 12px;
+                  margin: 0 7px 7px 0;
+                  padding: 7px;
+                  color: black;
+              }
+              
+              footer {
+                  background-color: white;
+                  color: #fff;
+                  font-size: 14px;
+                  bottom: 0;
+                  position: fixed;
+                  left: 0;
+                  right: 0;
+                  text-align: center;
+                  z-index: 999;
+              }
+              
+              footer p {
+                  margin: 10px 0;
+              }
+              
+              footer i {
+                  color: red;
+              }
+              
+              footer a {
+                  color: #3c97bf;
+                  text-decoration: none;
+              }
+              .header {
+              overflow: hidden;
+              background-color:#E02941;
+              padding: 20px 10px;
+              }
+              
+              .header a {
+              float: left;
+              color: white;
+              text-align: center;
+              padding: 12px;
+              text-decoration: none;
+              font-size: 18px; 
+              line-height: 25px;
+              border-radius: 4px;
+              }
+              
+              .header a.logo {
+              font-size: 25px;
+              font-weight: bold;
+              }
+              
+              .header a:hover {
+              background-color: dodgerblue;
+              color: white;
+              }
+              
+              .header a.active {
+              background-color: dodgerblue;
+              color: white;
+              }
+              
+              .header-right {
+              float: right;
+              }
+              @media screen and (max-width: 500px) {
+              .header a {
+              float: none;
+              display: block;
+              text-align: left;
+              }
+              
+              .header-right {
+              float: none;
+              }
+              
+              } */
+</style>
